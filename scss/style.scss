@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 $accordion-color:black; 
-$accordion-border-color:white;  
+$accordion-border-color:white;
 $accordion-border-radius: 1rem; 
 $accordion-button-color:black; 
 $accordion-button-bg:white; 
 $accordion-button-active-bg: white; 
-$accordion-button-active-color:black; 
+$accordion-button-active-color:black;
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -14,15 +16,21 @@ body{
     background-color: hsl(275, 100%, 97%);
     font-family: "work sans";
     font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    height: auto;
 };
+
 .accordion-body{
     color: hsl(292, 16%, 49%);
 };
 .style-h1{
     padding: 0.3em 1.3em;
 };
+.accordion-header{
+    font-weight: 700;
+}
 .background-img{
-    height: 500px;
     background-image: url('../assets/images/background-pattern-desktop.svg');
 };
 .btn-close{
