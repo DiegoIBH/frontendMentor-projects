@@ -11,36 +11,60 @@ $accordion-button-active-color:black;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+// :root{
+//     margin: 0;
+//     padding: 0;
+// }
 
 body{
     background-color: hsl(275, 100%, 97%);
     font-family: "work sans";
-    font-size: 1rem;
     margin: 0;
     padding: 0;
-    height: auto;
 };
-
+.accordion{
+    width: 80%;
+    margin: 5rem auto;
+    overflow: hidden;
+    
+}
 .accordion-body{
     color: hsl(292, 16%, 49%);
 };
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+};
+.accordion-button{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 .style-h1{
     padding: 0.3em 1.3em;
 };
-.accordion-header{
-    font-weight: 700;
-}
 .background-img{
-    background-image: url('../assets/images/background-pattern-desktop.svg');
+    padding-top: 5rem;
+    top:-200px;
+    width: 100%;
+    height: 400px;
+    background-image: url('/assets/images/background-pattern-desktop.svg');
+    z-index: -1;
 };
 .btn-close{
-    background-image: url('../assets/images/icon-plus.svg');
+    background-image: url('/assets/images/icon-plus.svg');
 };
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("../assets/images/icon-minus.svg");
+    background-image: url("/assets/images/icon-minus.svg");
 
   };
 .accordion-button::after {
-    background-image: url("../assets/images/icon-plus.svg");
+    background-image: url("/assets/images/icon-plus.svg");
   };
+
+  @media screen and (min-width: 768px) {
+    .accordion{
+        width: 60%;
+        margin: 10rem auto;
+    }   
+  }
