@@ -19,7 +19,7 @@ $focus-ring-blur:       0 !default;
 $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color !default;
 
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../assets/sass/bootstrap.scss";
 
 body{
     background-color: hsl(275, 100%, 97%);
