@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/profile/DiegoIBH/solutions)
-- Live Site URL: [Add live site URL here](https://diegoibh.github.io/frontendMentor-projects/)
+- Solution URL: [https://www.frontendmentor.io/profile/DiegoIBH/solutions](https://www.frontendmentor.io/profile/DiegoIBH/solutions)
+- Live Site URL: [https://diegoibh.github.io/frontendMentor-projects/](https://diegoibh.github.io/frontendMentor-projects/)
 
 ## My process
 
@@ -69,8 +69,11 @@ Also, wanted to feel more confortable using npm and construct a work envirnoment
           </div>
         </div>
       </div>
-<!-- Also, properly linking document for js functionalities and css compiling (from scss). Note: I used a Sass what extension, since I believe it's updates live and can see the changes of the comipled(mini) css file.
+<!-- Also, properly linking document for js functionalities and css compiling (from scss). Note: I used a Sass what extension, since I believe it's updates live and can see the changes of the comipled(mini) css file.-->
 
+<link rel="stylesheet" href="./assets/css/style.css"> <!--mini file where the scss is complied-->
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script><!--Mini file where is Bootstrap js functionality-->
 ```
 ```scss
 //Used customized bootstrap variables in order to change focus box-shadow color and opacity
@@ -83,7 +86,7 @@ $focus-ring-width:      .25rem !default;
 $focus-ring-color:      rgba($primary, $focus-ring-opacity) !default;
 $focus-ring-blur:       0 !default;
 $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color !default;
-
+//It has to be added befor the bootstrap.scss document.
 @import "../assets/sass/bootstrap.scss";
 ```
 
@@ -100,7 +103,7 @@ Below, there is my list of things to improve:
 ### Useful resources
 
 - [Bootstrap Accordion docs](https://getbootstrap.com/docs/5.3/components/accordion) - This helped me on understanding better the structure and its selectors. 
-- [SCSS Variables docs](https://sass-lang.com/guide/#variables) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [SCSS Variables docs](https://sass-lang.com/guide/#variables) - This helped me on understanding better how to use variables in Sass and to understand bootstrap variables.
 
 
 ## Author
