@@ -45,33 +45,33 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- Bootstrap
+- Sass
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- NPM
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I used this exercise to practice a project with Bootstrap (customized with Sass). 
+Also, wanted to feel more confortable using npm and construct a work envirnoment with specific dependencies to use for a faster production process (I deleted the node folder and extracted mini filesfor a optimized project).
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<h1>Practice customizing Bootstrap variables</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+$dark-purp: hsl(293, 82%, 45%);
+$focus-ring-opacity:.50;
+$primary: $dark-purp;
+
+$focus-ring-width:      .25rem !default;
+
+$focus-ring-color:      rgba($primary, $focus-ring-opacity) !default;
+$focus-ring-blur:       0 !default;
+$focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color !default;
+
+@import "../assets/sass/bootstrap.scss";
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
